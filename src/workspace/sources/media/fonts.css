@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Simple Tools. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: Pacifo;
+    src: url("../../../resources/pacifo_font/Pacifico-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: PlusJ;
+    src: url("../../../resources/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+}

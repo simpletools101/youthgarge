@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "types": [
+            "jasmine",
+            "node"
+        ],
+        "module": "es2022"
+    },
+    "include": [
+        "./src/ve/**/*.spec.ts"
+    ]
+}

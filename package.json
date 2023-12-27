@@ -1,0 +1,49 @@
+{
+  "name": "YouthGarage",
+  "version": "1.0.0",
+  "description": "A blog website for Empowering the youth",
+  "main": "main.js",
+  "repository": "https://github.com/simpletools101/",
+  "author": "Simpletools",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node ./node_modules/webpack/bin/webpack.js serve --config scripts/dev.js",
+    "test:build": "node ./node_modules/webpack/bin/webpack.js --config scripts/jasmine/testFileswebpack.js",
+    "test:watch": "node ./node_modules/webpack/bin/webpack.js --config scripts/jasmine/testFileswebpack.js --watch",
+    "test": "yarn run test:build && jasmine-browser-runner runSpecs",
+    "test:serve": "yarn run test:build && jasmine-browser-runner",
+    "test:common": "yarn run test:build && jasmine",
+    "deploy-function": "firebase deploy --only functions:addMessage"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/dotenv-webpack": "^7.0.6",
+    "@types/jasmine": "^5.1.1",
+    "@types/node": "^20.8.6",
+    "@webcomponents/webcomponentsjs": "^2.8.0",
+    "css-loader": "^6.8.1",
+    "dotenv-webpack": "^8.0.1",
+    "gulp": "^4.0.2",
+    "html-webpack-plugin": "^5.5.3",
+    "jasmine": "^5.1.0",
+    "jasmine-browser-runner": "^2.3.0",
+    "jasmine-core": "^5.1.1",
+    "jsdom": "^22.1.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "typescript": "^5.1.6",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@lit/task": "^1.0.0",
+    "@vaadin/router": "^1.7.5",
+    "axios": "^1.6.2",
+    "dotenv": "^8.6.0",
+    "firebase": "^10.7.0",
+    "lit": "^3.1.0"
+  }
+}

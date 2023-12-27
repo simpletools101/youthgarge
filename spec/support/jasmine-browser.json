@@ -1,0 +1,12 @@
+{
+    "srcDir": "src",
+    "srcFiles": [],
+    "specDir": "spec/tests/unit/browser",
+    "specFiles": [
+        "browser.spec.js"
+    ],
+    "helpers": [],
+    "browser": {
+        "name": "chrome"
+    }
+}
